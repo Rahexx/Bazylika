@@ -19,16 +19,21 @@ module.exports = merge(common, {
         removeComments: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: 'priests.html',
+      template: './src/priests.html',
+      minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        removeComments: true,
+      },
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
