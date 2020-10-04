@@ -84,6 +84,15 @@ module.exports = merge(common, {
           removeComments: true,
         },
       }),
+      new HtmlWebpackPlugin({
+        filename: 'historyChurch.html',
+        template: './src/historyChurch.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
     ],
   },
   module: {
