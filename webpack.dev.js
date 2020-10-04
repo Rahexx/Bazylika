@@ -21,7 +21,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'priests.html',
-      template: './src/priests.html',
+      template: './src/pages/priests.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -30,7 +30,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'announcements.html',
-      template: './src/announcements.html',
+      template: './src/pages/announcements.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -39,7 +39,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'office.html',
-      template: './src/office.html',
+      template: './src/pages/office.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -48,7 +48,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'intentions.html',
-      template: './src/intentions.html',
+      template: './src/pages/intentions.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -57,7 +57,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'contact.html',
-      template: './src/contact.html',
+      template: './src/pages/contact.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -66,7 +66,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'orderMass.html',
-      template: './src/orderMass.html',
+      template: './src/pages/orderMass.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -75,7 +75,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'historyChurch.html',
-      template: './src/historyChurch.html',
+      template: './src/pages/historyChurch.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -84,7 +84,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'devotion.html',
-      template: './src/devotion.html',
+      template: './src/pages/devotion.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -93,7 +93,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'parishGroup.html',
-      template: './src/parishGroup.html',
+      template: './src/pages/parishGroup.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
@@ -102,7 +102,7 @@ module.exports = merge(common, {
     }),
     new HtmlWebpackPlugin({
       filename: 'articles.html',
-      template: './src/articles.html',
+      template: './src/pages/articles.html',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,

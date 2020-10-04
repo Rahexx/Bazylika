@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kancelaria</title>
+    <title>Księża</title>
   </head>
-  <body class="officeContainer">
+  <body class="priestsContainer">
     <header class="header">
       <h1 class="header__title">Bazylika NSPJ</h1>
       <img
         class="header__image"
-        src="./assets/churchHeader.jpg"
-        alt="zdjęcie kościoła we wnątrz"
+        src="../assets/churchHeader.jpg"
+        alt="zdjęcie kościoła wewnątrz"
       />
     </header>
     <div class="burger"></div>
@@ -59,21 +59,28 @@
         </li>
       </ul>
     </div>
-    <h1 class="officeContainer__header">Kancelaria</h1>
-    <main class="officeContent">
-      <h2 class="officeContent__header">Godziny urzędowania</h2>
-      <p class="officeContent__scheduleText">
-        Kancelaria Parafialna jest czynna:
-      </p>
-      <div class="officeContent__schedule">
-        <p class="officeContent__first">
-          Poniedziałek, wtorek, środa - od 10:00 do 12:00
-        </p>
-        <p class="officeContent__second">Czwartek - od 15:00 do 17:00</p>
-        <p class="officeContent__thirst">
-          Piątek - od 10:00 do 12:00 oraz od 15:00 do 17:00
-        </p>
-      </div>
+    <h1 class="priestsContainer__header">Kapłani</h1>
+    <main class="priestsList">
+      <ul class="priestsList__list">
+        <li class="priestsList__item">
+          <h2 class="priestsList__header">
+            Ks. Prałat Zbigniew Książek - Proboszcz
+          </h2>
+          <img
+            class="priestsList__image"
+            src="../assets/priest1.jpg"
+            alt="zdjęcie księdza"
+          />
+        </li>
+        <li class="priestsList__item">
+          <h2 class="priestsList__header">Ks. Marcin Nowak - Wikary</h2>
+          <img
+            class="priestsList__image"
+            src="../assets/priest2.jpg"
+            alt="zdjecie księdza"
+          />
+        </li>
+      </ul>
     </main>
     <footer class="footer">
       <p class="footer__text">&copy; Prawa zastrzeżone przez Bazylikę NSPJ</p>
