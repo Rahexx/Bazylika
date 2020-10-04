@@ -82,6 +82,15 @@ module.exports = merge(common, {
         removeComments: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      filename: 'devotion.html',
+      template: './src/devotion.html',
+      minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        removeComments: true,
+      },
+    }),
   ],
   module: {
     rules: [
