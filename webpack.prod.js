@@ -129,6 +129,24 @@ module.exports = merge(common, {
           removeComments: true,
         },
       }),
+      new HtmlWebpackPlugin({
+        filename: 'gallery.html',
+        template: './src/pages/gallery.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'exampleGallery.html',
+        template: './src/pages/./galleries/exampleGallery.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
     ],
   },
   module: {
