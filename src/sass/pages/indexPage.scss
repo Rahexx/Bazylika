@@ -1,0 +1,6 @@
+.container {
+  display: grid;
+  grid-template: 50vh calc(70% - 50vh) calc(10% - 50vh) calc(20% - 50vh) / 100%;
+  height: 200vh;
+  background-color: $background-color;
+}
