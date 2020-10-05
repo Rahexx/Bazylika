@@ -1,0 +1,16 @@
+.burger {
+  display: none;
+  top: 20px;
+  right: 25px;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  z-index: 1;
+  cursor: pointer;
+  i {
+    color: $accent-color;
+    font-size: 25px;
+  }
+}
