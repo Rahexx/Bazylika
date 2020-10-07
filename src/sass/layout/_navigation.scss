@@ -1,15 +1,25 @@
 .mainNavigation {
   position: fixed;
-  display: none;
   top: 0;
-  left: 0;
+  left: -100vw;
   height: 100vh;
   width: 100vw;
   padding: 10vh 0 0 10vw;
   background-color: $primary-text;
   &__list {
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  &__item {
+    &--desktop {
+      display: none;
+    }
+  }
+  &__link {
+    color: $text-icons;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 }

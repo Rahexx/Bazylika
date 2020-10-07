@@ -1,9 +1,10 @@
 .burger {
-  display: none;
-  top: 20px;
+  position: fixed;
+  top: 15px;
   right: 25px;
   height: 35px;
   width: 35px;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: $primary-color;
