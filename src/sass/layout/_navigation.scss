@@ -12,6 +12,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    @include mq(small) {
+      height: 85%;
+    }
   }
   &__item {
     &--desktop {

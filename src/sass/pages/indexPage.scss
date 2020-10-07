@@ -1,10 +1,14 @@
 .container {
   display: grid;
-  grid-template: 50vh 20vh 1fr 7vh 10vh / 100%;
+  grid-template: 50vh 20vh 1fr 7vh 9.8vh / 100%;
   min-height: 100vh;
   width: 100vw;
   background-color: $background-color;
   font-family: $font;
+  @include mq(small) {
+    min-height: 150vh;
+    grid-template: 60vh 20vh 1fr 15vh / 88%;
+  }
   &__header {
     width: 90vw;
     display: inline-block;
@@ -12,24 +16,45 @@
     align-self: center;
     font-size: 22px;
     text-align: center;
+    @include mq(small) {
+      align-self: end;
+    }
   }
 }
 
 .mainContent {
   margin: 30px 0 60px;
+  @include mq(small) {
+    margin: 30px 0 40px;
+    display: grid;
+    width: 88vw;
+    grid-template: 15vh 1fr 15vh / repeat(auto-fit, 44vw);
+  }
   &__header {
     margin-bottom: 50px;
     width: 100%;
     display: inline-block;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
+    @include mq(small) {
+      grid-column: -1 / 1;
+    }
   }
   &__article {
     margin: 0 auto 10vh;
     width: 80vw;
+    @include mq(small) {
+      margin: 0;
+      width: 30vw;
+      align-self: center;
+      justify-self: center;
+    }
   }
   &__image {
     width: 80vw;
+    @include mq(small) {
+      width: 30vw;
+    }
   }
   &__text {
     margin: 10px 0 30px;
@@ -40,6 +65,10 @@
   &__seeMore {
     height: 30px;
     text-align: center;
+    @include mq(small) {
+      grid-column: -1 / 1;
+      align-self: end;
+    }
   }
   &__link {
     position: relative;

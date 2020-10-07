@@ -10,6 +10,9 @@
   background-color: $primary-color;
   z-index: 2;
   cursor: pointer;
+  @include mq(small) {
+    display: none;
+  }
   i {
     color: $accent-color;
     font-size: 25px;
