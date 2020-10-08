@@ -26,6 +26,7 @@
       align-self: end;
     }
     @include mq(large) {
+      font-size: 28px;
       width: 100%;
     }
   }
@@ -41,7 +42,8 @@
   }
   @include mq(large) {
     width: 100%;
-    grid-template: 15vh 1fr 15vh / repeat(auto-fit, 20vw);
+    padding: 10vh 5vw;
+    grid-template: 15vh 1fr 15vh / repeat(auto-fit, 29.5vw);
   }
   &__header {
     margin-bottom: 50px;
@@ -50,7 +52,9 @@
     font-size: 20px;
     text-align: center;
     @include mq(small) {
+      font-size: 23px;
       grid-column: -1 / 1;
+      align-self: center;
     }
   }
   &__article {
@@ -63,7 +67,7 @@
       justify-self: center;
     }
     @include mq(large) {
-      width: 20vw;
+      width: 27vw;
     }
   }
   &__image {
@@ -72,14 +76,20 @@
       width: 30vw;
     }
     @include mq(large) {
-      width: 20vw;
+      width: 27vw;
     }
   }
   &__text {
     margin: 10px 0 30px;
+    @include mq(large) {
+      font-size: 18px;
+    }
   }
   &__date {
     font-size: 12px;
+    @include mq(large) {
+      font-size: 14px;
+    }
   }
   &__seeMore {
     height: 30px;
@@ -87,6 +97,9 @@
     @include mq(small) {
       grid-column: -1 / 1;
       align-self: end;
+    }
+    @include mq(large) {
+      font-size: 18px;
     }
   }
   &__link {
@@ -102,6 +115,10 @@
     font-size: 22px;
     color: $accent-color;
     animation: moveArrow 2s linear infinite;
+    @include mq(large) {
+      top: 37%;
+      font-size: 28px;
+    }
   }
 }
 
