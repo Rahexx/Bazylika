@@ -7,6 +7,15 @@
   padding: 10vh 0 0 10vw;
   background-color: $primary-text;
   z-index: 1;
+  @include mq(large) {
+    position: absolute;
+    left: 0;
+    top: 12vh;
+    height: 9vh;
+    width: 100%;
+    padding: 0 5vw;
+    background-color: transparent;
+  }
   &__list {
     height: 50%;
     display: flex;
@@ -15,15 +24,54 @@
     @include mq(small) {
       height: 85%;
     }
+    @include mq(large) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
   &__item {
     &--desktop {
       display: none;
+      @include mq(large) {
+        display: inline-block;
+      }
     }
   }
   &__link {
     color: $text-icons;
     text-transform: uppercase;
     text-decoration: none;
+    @include mq(large) {
+      color: $primary-text;
+      font-size: 12px;
+      transition: 0.5s;
+      &:hover {
+        color: $dark-primary-color;
+        &:after {
+          content: '';
+          display: block;
+          left: 0;
+          bottom: 20px;
+          width: 100%;
+          height: 3px;
+          background-color: $dark-primary-color;
+        }
+      }
+    }
+    @include mq(extra-large) {
+      font-size: 16px;
+    }
+    &--active {
+      color: $dark-primary-color;
+      &:after {
+        content: '';
+        display: block;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        height: 3px;
+        background-color: $dark-primary-color;
+      }
+    }
   }
 }

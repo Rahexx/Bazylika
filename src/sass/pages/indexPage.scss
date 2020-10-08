@@ -9,6 +9,12 @@
     min-height: 150vh;
     grid-template: 60vh 20vh 1fr 15vh / 88%;
   }
+  @include mq(large) {
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+    grid-template: 60vh 15vh 1fr 8vh / 100%;
+  }
   &__header {
     width: 90vw;
     display: inline-block;
@@ -18,6 +24,9 @@
     text-align: center;
     @include mq(small) {
       align-self: end;
+    }
+    @include mq(large) {
+      width: 100%;
     }
   }
 }
@@ -29,6 +38,10 @@
     display: grid;
     width: 88vw;
     grid-template: 15vh 1fr 15vh / repeat(auto-fit, 44vw);
+  }
+  @include mq(large) {
+    width: 100%;
+    grid-template: 15vh 1fr 15vh / repeat(auto-fit, 20vw);
   }
   &__header {
     margin-bottom: 50px;
@@ -49,11 +62,17 @@
       align-self: center;
       justify-self: center;
     }
+    @include mq(large) {
+      width: 20vw;
+    }
   }
   &__image {
     width: 80vw;
     @include mq(small) {
       width: 30vw;
+    }
+    @include mq(large) {
+      width: 20vw;
     }
   }
   &__text {

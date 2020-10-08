@@ -4,11 +4,18 @@
   @include mq(small) {
     grid-template: 30% 70% / 100%;
   }
+  @include mq(large) {
+    grid-template: 20% 15% 65% / 100%;
+  }
   &__title {
     padding-left: 7vw;
     font-size: 23px;
     align-self: center;
     text-transform: uppercase;
+    @include mq(large) {
+      padding-left: 5vw;
+      font-size: 35px;
+    }
   }
   &__image {
     height: 80%;
@@ -16,6 +23,10 @@
     object-fit: cover;
     @include mq(small) {
       height: 70%;
+    }
+    @include mq(large) {
+      height: 65%;
+      grid-row: 3/4;
     }
   }
 }
