@@ -1,0 +1,29 @@
+.officeContent {
+  margin-bottom: 40px;
+  min-height: 22vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  @include mq(small) {
+    min-height: 50vh;
+    margin: 20vh 0 10vh;
+  }
+  @include mq(large) {
+    min-height: 20vh;
+    margin: 10vh 0;
+  }
+  &__scheduleTitle {
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+  }
+  &__schedule {
+    margin: 0 auto;
+    width: 90%;
+  }
+  &__days {
+    font-size: 18px;
+    margin: 25px 0;
+    text-align: center;
+  }
+}
