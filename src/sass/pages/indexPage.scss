@@ -36,9 +36,10 @@
   margin: 30px 0 60px;
   @include mq(small) {
     margin: 30px 0 40px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 88vw;
-    grid-template: 15vh 1fr 15vh / repeat(auto-fit, 44vw);
   }
   @include mq(large) {
     width: 100%;
@@ -61,7 +62,7 @@
     margin: 0 auto 10vh;
     width: 80vw;
     @include mq(small) {
-      margin: 0;
+      margin: 5vh 0;
       width: 30vw;
       align-self: center;
       justify-self: center;
@@ -95,8 +96,7 @@
     height: 30px;
     text-align: center;
     @include mq(small) {
-      grid-column: -1 / 1;
-      align-self: end;
+      width: 88vw;
     }
     @include mq(large) {
       font-size: 18px;
