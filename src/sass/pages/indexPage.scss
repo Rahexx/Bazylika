@@ -44,7 +44,6 @@
   @include mq(large) {
     width: 100%;
     padding: 10vh 5vw;
-    grid-template: 15vh 1fr 15vh / repeat(auto-fit, 29.5vw);
   }
   &__header {
     margin-bottom: 50px;
