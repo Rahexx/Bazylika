@@ -1,0 +1,22 @@
+.waysContacts {
+  margin-bottom: 60px;
+  @include mq(small) {
+    margin: 60px 0;
+  }
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__title,
+  &__text {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
