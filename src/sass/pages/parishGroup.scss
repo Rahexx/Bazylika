@@ -1,0 +1,33 @@
+.parishMainContent {
+  margin-bottom: 60px;
+  @include mq(small) {
+    margin: 60px 0;
+  }
+  @include mq(large) {
+    margin-bottom: 100px 0;
+  }
+  &__list {
+    @include mq(large) {
+      margin: 0 auto;
+      width: 75%;
+    }
+  }
+  &__item {
+    margin-bottom: 60px;
+    display: inline-block;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+    @include mq(large) {
+      margin-bottom: 60px;
+    }
+  }
+  &__description {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+  }
+}
