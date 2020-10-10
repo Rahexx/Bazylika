@@ -1,0 +1,57 @@
+.priestsList {
+  &__list {
+    margin: 0 auto;
+    width: 90%;
+    @include mq(small) {
+      margin: 50px 0 60px;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    @include mq(large) {
+      margin: 50px auto 100px;
+      height: 50vh;
+      width: 90%;
+    }
+  }
+  &__item {
+    height: 75vh;
+    display: inline-block;
+    @include mq(small) {
+      margin-bottom: 50px;
+      height: 100vh;
+      width: 35vw;
+    }
+    @include mq(large) {
+      margin-bottom: 50px;
+      height: 50vh;
+      width: 20vw;
+    }
+  }
+  &__header {
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    @include mq(small) {
+      margin-bottom: 30px;
+      height: 10vh;
+    }
+  }
+  &__image {
+    margin: 0 auto;
+    height: 50vh;
+    width: 100%;
+    display: inline-block;
+    object-fit: cover;
+    @include mq(small) {
+      height: 75vh;
+    }
+    @include mq(large) {
+      height: 40vh;
+    }
+  }
+}
