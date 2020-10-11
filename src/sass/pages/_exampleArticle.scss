@@ -1,0 +1,11 @@
+.articleMainContent {
+  margin-bottom: 30px;
+  @include mq(small) {
+    margin: 30px 7vw 60px;
+    width: 100%;
+  }
+  @include mq(large) {
+    margin: 60px 5vw 60px 0;
+    width: 100%;
+  }
+}

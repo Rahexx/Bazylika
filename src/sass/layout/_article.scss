@@ -10,6 +10,14 @@
   @include mq(large) {
     width: 27vw;
   }
+  &--singleArticle {
+    @include mq(large) {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
   &__image {
     width: 80vw;
     @include mq(small) {
@@ -18,17 +26,52 @@
     @include mq(large) {
       width: 27vw;
     }
+    &--singleArticle {
+      @include mq(small) {
+        width: 44vw;
+      }
+      @include mq(large) {
+        height: 40vh;
+        width: 30%;
+      }
+    }
   }
   &__text {
     margin: 10px 0 30px;
     @include mq(large) {
       font-size: 18px;
     }
+    &--singleArticle {
+      margin-top: 40px;
+      font-size: 18px;
+      @include mq(small) {
+        margin: 50px 0;
+        width: 75vw;
+        text-align: center;
+      }
+      @include mq(large) {
+        margin-top: 0;
+        width: 50%;
+        text-align: start;
+        align-self: center;
+      }
+    }
   }
   &__date {
     font-size: 12px;
     @include mq(large) {
       font-size: 14px;
+    }
+    &--singleArticle {
+      font-size: 14px;
+      @include mq(small) {
+        text-align: start;
+      }
+      @include mq(large) {
+        margin-left: 30%;
+        width: 50%;
+        text-align: end;
+      }
     }
   }
 }
