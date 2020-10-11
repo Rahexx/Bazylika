@@ -1,0 +1,14 @@
+.articlesContent {
+  margin-bottom: 60px;
+  @include mq(small) {
+    margin: 30px 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 88vw;
+  }
+  @include mq(large) {
+    width: 100%;
+    padding: 10vh 5vw;
+  }
+}
