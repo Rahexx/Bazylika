@@ -1,0 +1,24 @@
+.pagination {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  @include mq(large) {
+    margin-top: 30px;
+  }
+  &__item {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid $dark-primary-color;
+    &--active {
+      background-color: $dark-primary-color;
+      color: $accent-color;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

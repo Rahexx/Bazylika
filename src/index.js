@@ -15,7 +15,6 @@ function changeBurgerClasses(item, isOpen) {
 }
 
 function showMenu(item, width) {
-  console.log(item);
   item.classList.add('active');
   gsap.to('.mainNavigation', { x: width, duration: 1 });
   changeBurgerClasses(item.children[0], true);
