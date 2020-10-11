@@ -1,0 +1,30 @@
+.exampleContent {
+  margin-bottom: 60px;
+  @include mq(small) {
+    margin: 60px 0;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @include mq(small) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    width: 80%;
+    align-self: center;
+    @include mq(small) {
+      width: 40%;
+      align-self: center;
+    }
+    @include mq(large) {
+      width: 30%;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+}
