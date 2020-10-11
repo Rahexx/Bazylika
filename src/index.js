@@ -3,8 +3,6 @@ import { gsap } from 'gsap';
 
 const burger = document.querySelector('.burger');
 const verticalMenu = document.querySelector('.mobileNav__item--vertical');
-const nav = document.querySelector('.mainNavigation');
-let isVertical = false;
 
 function changeBurgerClasses(item, isOpen) {
   if (isOpen) {
