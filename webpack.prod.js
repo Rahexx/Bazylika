@@ -119,6 +119,7 @@ module.exports = merge(common, {
           collapseWhitespace: true,
           removeComments: true,
         },
+        chunks: ['main','list'],
       }),
       new HtmlWebpackPlugin({
         filename: 'exampleArticle.html',
