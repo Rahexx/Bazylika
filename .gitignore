@@ -14,5 +14,6 @@
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode 
+/dist
 /.cache
 /node_modules
