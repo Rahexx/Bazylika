@@ -43,7 +43,32 @@ verticalMenu.addEventListener('click', () => {
   }
 });
 
+verticalMenu.addEventListener('touch', () => {
+  const pageWidth = document.body.offsetWidth;
+  const icon = document.querySelector('.mobileNav__icon--menu');
+
+  if (!burger.classList.contains('active')) {
+    showMenu(burger, pageWidth);
+    changeBurgerClasses(icon, true);
+  } else {
+    closeMenu(burger);
+    icon.classList.add('fa-bars');
+    icon.classList.remove('fa-times');
+    changeBurgerClasses(icon, false);
+  }
+});
+
 burger.addEventListener('click', () => {
+  const pageWidth = document.body.offsetWidth;
+
+  if (!burger.classList.contains('active')) {
+    showMenu(burger, pageWidth);
+  } else {
+    closeMenu(burger);
+  }
+});
+
+burger.addEventListener('touch', () => {
   const pageWidth = document.body.offsetWidth;
 
   if (!burger.classList.contains('active')) {
